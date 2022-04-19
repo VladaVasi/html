@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Таблица</title>
+    </head>
+
+    <body>
+        <table border="1" cellspacing="10" cellpadding="20" align=left style="background-color: blue">
+        <!-- cellspacing и cellpadding устарели и не применяются в html5. Вместо него применяют CSS -->
+        <caption>Таблица</caption>
+            <tr align=centre>
+                <th>Имя</th>
+                <th>Возраст</th>
+            </tr>
+            <tr>
+                <td>Иван</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Мария</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+        <table>
+            <colgroup>
+                <col span="1">
+            </colgroup>
+            <tr>
+                <th>
+                    <table> <!-- вложенная таблица -->
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                        </tr>
+                    </table>
+                </th>
+                <th>Возраст</th>
+            </tr>
+            <tr>
+                <td>Иван</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Мария</td>
+                <td>20</td>
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>
