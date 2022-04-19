@@ -5,33 +5,41 @@
         <title>Список покупок</title>
     </head>
     <body>
-        <table border="1">
-            <caption>Список покупок</caption>
-            <!--Шапка таблицы-->
-            <tr>
-                <th>Наименование продукта</th>
-                <th>Цена</th>
-                <th>Скидка</th>
-                <th>Дата покупки</th>
-            </tr>
-            <tr>
-                <td>Сыр</td>
-                <td>549.01</td>
-                <td>100</td>
-                <td>13.04.</td>
-            </tr>
-            <tr>
-                <td>Сало</td>
-                <td>799</td>
-                <td>350</td>
-                <td>13.04.</td>
-            </tr>
-            <tr>
-                <td>Хлеб</td>
-                <td>99.99</td>
-                <td></td>
-                <td>13.04.</td>
-            </tr>
+        <table border="1" cellspacing="5" cellpadding="5" width="50">
+        <!-- cellspacing и cellpadding устарели и не применяются в html5. Вместо него применяют CSS -->
+            <caption><h3>Список покупок</h3></caption>
+            <colgroup>
+                <col span="1" style="background-color: #eee">
+                <col>
+                <col span="1" style="background-color:#2c862c">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Наименование продукта</th>
+                    <th>Цена</th>
+                    <th>Скидка</th>
+                    <th>Дата покупки</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Сыр</td>
+                    <td>549.01</td>
+                    <td>100</td>
+                    <td rowspan="3">13.04.</td>
+                </tr>
+                <tr>
+                    <td>Сало</td>
+                    <td>799</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>Хлеб</td>
+                    <td>99.99</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
         </table>
 
     </body>
