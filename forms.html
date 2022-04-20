@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Рабочая тетрадь по формам ввода</title>
+    </head>
+    <body>
+    <!--Формы разных типов и с плейсментами-->
+        <h3>Формы</h3>
+        <label>Текст</label>
+        <input type="text" placeholder="Введите свое имя">
+        <br>
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com">
+        <br>
+        <label>Пароль</label>
+        <input type="password">
+        <br>
+        <label>Число</label>
+        <input type="number">
+        <br>
+        <label>Телефон</label>
+        <input type="tel">
+        <br>
+        <label>Многострочный текст</label>
+        <textarea>комментарии</textarea>
+        <br>
+        <br>
+
+    <!--Ниже секция кнопок-->
+        <h3>Кнопки</h3>
+        <h4>Кнопки с использованием input ниже</h4>
+        <input type="button" value="кнопка">
+        <!--обычная кликабельная кнопка-->
+        <br>
+        <input type="image" value="тут пишут название картинки">
+        <!--кнопка-изображение-->
+        <br>
+        <input type="submit">
+        <!--кнопка, при нажатии на которую с формы собирается информация и отправляется для обработки-->
+        <br>
+        <input type="reset">
+        <!--кнопка, которая очищает поля формы от введенных пользователем данных-->
+        <br>
+        <br>
+
+        <h4>Кнопки с использованием элемента button</h4>
+        <!--В элемент <button> можно поместить контент - текст или изображение-->
+        
+        <button type="submit">Submit</button> 
+        <!--кнопка для отправки данных формы-->
+        <br>
+        <button type="reset">Reset</button>
+        <!--кнопка сброса, возвращает первоначальное значение-->
+        <br>
+        <button type="button">Button</button>
+        <!--кликабельная кнопка-->
+        <br>
+        <button disabled>Disabled</button>
+        <!--некликабельная кнопка-->
+        <br>
+        <br>
+    
+    <!--Ниже секция флажков. У них есть только два состояния: включено и выключено-->
+        <h3>Флажки</h3>
+        <input type="checkbox">
+        <!--пустой-->
+        <br>
+        <label>
+            <input type="checkbox"> Я согласен с условиями
+        </label>
+        <!--с описанием рядом-->
+        <br>
+        <input type="checkbox" checked>
+        <!--изначальное состояние "включено"-->
+        <br>
+        <br>
+
+    <!--Ниже секция переключателей. У них есть несколько вариантов для выбора-->
+        <h3>Переключатели</h3>
+        <label> Gender</label>
+        <br>
+        <label><input type="radio" name="gender" checked> Female</label>
+        <br>
+        <label><input type="radio" name="gender"> Male</label>
+        <!--у всех элементов переключателя должно быть одиноковое значение атрибута name.
+        Для этого добавляем одинаковый атрибут name-->
+        <br>
+        <br>
+
+    <!--Ниже секция выпадающий список. Использовать когда варианты занимают слишком много места и их нужно спрятать-->
+        <h3>Выпадающий список</h3>
+        <label>Выпадающий список</label>
+        <br>
+        <select>
+            <option>Январь</option>
+            <option>Февраль</option>
+            <option>Март</option>
+            <option>Апрель</option>
+            <option>Май</option>
+            <option>Июнь</option>
+            <option>Июль</option>
+            <option>Август</option>
+            <option>Сентябрь</option>
+            <option>Октябрь</option>
+            <option>Ноябрь</option>
+            <option>Декабрь</option>
+        </select>
+        <br>
+        <br>
+    
+     <!--Ниже секция валидации форм ввода. Проверка введенных в поле ввода данных на корректность-->
+        <h3>Валидация форм ввода</h3>
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+        <br>
+        <label>Пароль</label>
+        <input type="password" required>
+        <br>
+        <label>
+            <input type="checkbox" required> Я согласен с <a href="">условиями</a>
+        </label>
+        <br>
+        <button type="submit">Поехали!</button>
+        <br>
+    </body>
+</html>
