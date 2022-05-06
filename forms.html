@@ -18,13 +18,26 @@
         <br>
         <label>Число</label>
         <input type="number">
+        <!--min и max определюят нижнее и верхнее возможное значение,
+        step - шаг измерения, value - начальное значение-->
+        <br>
+        <label>Ползунок</label>
+        <input type="range">
+        <!--тоже используются min, max, step и value-->
         <br>
         <label>Телефон</label>
         <input type="tel">
         <br>
-        <label>Многострочный текст</label>
+        <label>Ссылка</label>
+        <input type="url">
+        <br>
+        <label>Многострочный текст</label> <br>
         <textarea>комментарии</textarea>
         <br>
+        <label>Поиск</label>
+        <input type="search">
+        <!--браузеры добавляют крестик для очистки. 
+            Мобильные устройства добавляют кнопку поиска-->
         <br>
 
     <!--Ниже секция кнопок-->
@@ -59,6 +72,7 @@
         <button disabled>Disabled</button>
         <!--некликабельная кнопка-->
         <br>
+        <input type="file">
         <br>
     
     <!--Ниже секция флажков. У них есть только два состояния: включено и выключено-->
